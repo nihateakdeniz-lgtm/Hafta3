@@ -1,0 +1,10 @@
+\# Kapsam (Scope) Örnekleri ve Tahminler
+
+
+
+1\. \*\*Global Değişken Okuma:\*\* Fonksiyon içinde global bir değişkeni sadece okuyabiliriz, hata vermez.
+
+2\. \*\*Yerel Atama (UnboundLocalError):\*\* Fonksiyon içinde bir değişkene değer atamaya çalışırsak (örn: `x = x + 1`), Python onu yerel sanır ve global olanı okuyamaz. Hata verir. Çözüm: `nonlocal` veya parametre geçişi.
+
+3\. \*\*İç İçe Fonksiyon (Closure):\*\* İç fonksiyon, dış fonksiyondaki değişkeni `nonlocal` ile değiştirebilir.
+
